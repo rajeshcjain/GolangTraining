@@ -1,1 +1,5 @@
-package _3_switches
+package main
+
+func main(){
+
+}
