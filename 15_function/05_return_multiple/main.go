@@ -5,6 +5,8 @@ import "fmt"
 func main(){
 
 	fmt.Println(greet("rajesh","jain"))
+	var str,_ = greet("sakshi","jain")
+	fmt.Println(str)
 
 }
 
