@@ -13,6 +13,7 @@ func main(){
 	fmt.Println("Len " ,len(sliceStr))
 	/*************************Appending it now*****************/
 
+	//So here we are appending far ahead of the initial capacity of slice which was 3
 	for i := 0; i < 80; i++{
 		sliceStr = append(sliceStr,i)
 		fmt.Println("Len : ", len(sliceStr),"cap : ",cap(sliceStr))
