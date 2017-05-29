@@ -18,11 +18,12 @@ func main(){
 	/*
 	It is short hand of creating the map....and again it is nil underlying.
 	This is not the way you should declare the map as there are no append
-	function available to update the map.So preferably use other ways.
+	function available for map(It is available for slice) to update the map.So preferably use other ways.
 	*/
 	var myMap map[string]string
 	fmt.Println(myMap)
 	fmt.Println(myMap == nil)
+
 
 	/*
 	Here if we assign the it to value

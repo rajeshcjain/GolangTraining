@@ -4,6 +4,9 @@ import "fmt"
 
 func main(){
 
+	/*
+	 This is how you should create a map...using make
+	*/
 
 	myMap := make(map[string]string)
 
