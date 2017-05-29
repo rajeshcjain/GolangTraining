@@ -19,7 +19,9 @@ func main(){
 	//appending one slice with other slice
 	slic1 = append(slic1,slic2...)
 	fmt.Println(slic1)
+	slic1 = append(slic1[:5],slic1[7:]...)
 
+	fmt.Println(slic1)
 	// little lame here...we are deleting the 2nd entry from the slice
 
 	slic1 = append(slic1[:2],slic1[3:]...)

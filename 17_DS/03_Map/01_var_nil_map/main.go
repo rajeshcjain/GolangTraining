@@ -11,10 +11,6 @@ order will be same.It can change.It uses Hash table below for implementation.
 
 Other then that an uninitialized map is nil.It does not point to anything...just
 to nil.
-
-
-
-
 */
 
 func main(){

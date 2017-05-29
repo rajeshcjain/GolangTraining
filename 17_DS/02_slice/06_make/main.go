@@ -9,6 +9,9 @@ func main(){
 	customNumber[1] = 21
 	customNumber[2] = 31
 
+	//Here we can only access till index 2 as there are there is not array to access
+	//beyond this point.We need to call append function to increase the length of the
+	// underlying array.
 	fmt.Println(customNumber[0])
 	fmt.Println(customNumber[1])
 	fmt.Println(customNumber[2])

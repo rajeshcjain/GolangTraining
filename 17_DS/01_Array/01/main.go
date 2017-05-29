@@ -13,9 +13,6 @@ func main(){
 	               IMPORTANT
 	               Arrays are not dynamic but slices are dynamic
 
-	*/
-
-	/*
 	So when i am declaring it with string then it will be initializing with blank....if the type is int
 	then it will be initiazed with ZERO
 

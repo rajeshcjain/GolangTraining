@@ -30,7 +30,8 @@ func main(){
 	fmt.Print("[:2]")
 	fmt.Println(x[:2])
 	/*
-	  IT will start from index 5 and will print till end.
+	  IT will start from index 5 where 5th index is not included
+	  and will print till end.
 	*/
 	fmt.Print("[5:]")
 	fmt.Println(x[5:])

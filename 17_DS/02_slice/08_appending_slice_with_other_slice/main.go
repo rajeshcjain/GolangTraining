@@ -14,7 +14,7 @@ func main(){
 
 
 	/*
-	 Here please mind the slice2...we have to specify it as "slice2..." as
+	 Here please mind the slic2...we have to specify it as "slic2..." as
 	 func append(slice []Type, elems ...Type) []Type
 
 	 we pass the slice as list of elements in the append function.

@@ -14,7 +14,6 @@ func main(){
 	}
 
 	for _,val := range x{
-
 		fmt.Printf("%v - %T - %v\n", val,val,[]byte(val))
 	}
 

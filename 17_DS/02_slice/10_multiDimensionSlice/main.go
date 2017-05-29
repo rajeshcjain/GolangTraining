@@ -29,12 +29,19 @@ func main(){
 	fmt.Println("1st entry of slice")
 	fmt.Println(student1)
 
-	student2 := make([]string,4)
+	/*
+	Now this is important..here we have a slice which has 5 elements
+	where as the student1 has 4 elements..so this way we can have different
+	number of elements for different rows
+
+	*/
+	student2 := make([]string,5)
 	student2 = append(student2,"R2")
 	student2 = append(student2,"89%")
 	student2 = append(student2,"88%")
 	student2 = append(student2,"87%")
 	student2 = append(student2,"89%")
+	student2 = append(student2,"90%")
 
 	fmt.Println("2nd entry of slice")
 	fmt.Println(student2)
@@ -43,10 +50,6 @@ func main(){
 	records = append(records,student1)
 	records = append(records,student2)
 
-
 	fmt.Println("*******************2-Dimensional Slice************************")
 	fmt.Println(records)
-
-
-
 }

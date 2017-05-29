@@ -13,12 +13,12 @@ func main(){
 	sliceOfint :=[]int{1,2,3,4}
 
 	//2). sliceStr := make([]string,3)
-	//This will create an empty slice.
+	//This will create an empty slice with cap=3 and len=3
 	/*
 	    3). sliceType := make([]string,length,capacity)
                 sliceStr := make([]string,50,100)
 
-                So here we are creating the slice with with name sliceStr which has string type of under lying array
+                So here we are creating the slice with name sliceStr which has string type of under lying array
                 and the total capacity of array is 100 where as the initial length of the array is 50.So now when we
                 put 51th array then the length of the array is changed from 50 to 100;
 
