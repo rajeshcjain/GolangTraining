@@ -26,6 +26,7 @@ func main(){
 	reader := bufio.NewScanner(res.Body)
 	reader.Split(bufio.ScanWords)
 
+	//Created a map
 	myMap := map[string]string{}
 
 	// Scan advances the Scanner to the next token, which will then be
