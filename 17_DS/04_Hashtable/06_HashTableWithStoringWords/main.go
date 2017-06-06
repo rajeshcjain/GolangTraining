@@ -15,7 +15,7 @@ func main(){
 
 	scanner := bufio.NewScanner(res.Body)
 	scanner.Split(bufio.ScanWords)
-	res.Body.Close()
+	defer res.Body.Close()
 
 
 	//So here we are making a slice of slice.So here we have a slice with 12 length and
@@ -34,12 +34,11 @@ func main(){
 	for scanner.Scan(){
               str := scanner.Text()
 		n:= HandleBuket(str)
-		fmt.Println("str = ",str ," n = ",n)
 		hashTable[n] = append(hashTable[n],str)
 	}
 
 	for i := 0; i <12 ; i++{
-		fmt.Println(len(hashTable[i]))
+		fmt.Printf("---- %s",hashTable[i])
 	}
 }
 
