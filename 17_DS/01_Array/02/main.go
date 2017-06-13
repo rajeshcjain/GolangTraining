@@ -12,4 +12,3 @@ func main() {
 	fmt.Println(x)
 	fmt.Println(x[42])
 }
-

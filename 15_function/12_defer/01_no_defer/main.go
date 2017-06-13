@@ -5,15 +5,15 @@ import "fmt"
 // This is a program where defer has not been used to understand what is the
 // use of defer.
 
-func hello(){
+func hello() {
 	fmt.Println("hello")
 }
 
-func world(){
+func world() {
 	fmt.Println(" world")
 }
 
-func main(){
+func main() {
 	hello()
 	world()
 

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	//declaring the array of type in of size 60
 	var x [60]int

@@ -1,22 +1,21 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
-
 //As all the fields are not exported..i.e they are not in capital letters..so they will not be printed after marshaling
-type Person struct{
+type Person struct {
 	first string
-	last string
-	age int
+	last  string
+	age   int
 }
 
-func main(){
+func main() {
 
-	p1 := Person{"james","bond",24}
+	p1 := Person{"james", "bond", 24}
 	fmt.Println(p1)
-	bs,_:= json.Marshal(p1)
+	bs, _ := json.Marshal(p1)
 	fmt.Println(string(bs))
 }

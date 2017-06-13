@@ -7,6 +7,3 @@ func main() {
 		fmt.Printf("decimal %d, hexadecimal %#X binary %b UTF 8 %q \n", i, i, i, i)
 	}
 }
-
-
-

@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	printName("Rajesh")
 	printName("Jain")
 
 }
 
-func printName(name string){
+func printName(name string) {
 	fmt.Println(name)
 }

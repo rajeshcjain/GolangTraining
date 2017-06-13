@@ -1,5 +1,14 @@
 package main
 
-func main(){
+type vehicals interface {}
+
+type vehical interface{
+
+
+}
+
+
+
+func main() {
 
 }

@@ -2,33 +2,32 @@ package main
 
 import "fmt"
 
-type Person struct{
+type Person struct {
 	first string
-	last string
-	age int
+	last  string
+	age   int
 }
 
 //So here we are overriding the person's first field
-type DoubleZero struct{
+type DoubleZero struct {
 	Person
-	first string
+	first         string
 	LicenceToKill bool
 }
 
-func main(){
+func main() {
 
 	p1 := DoubleZero{
-		Person : Person{
-			first : "James",
-			last : "Bond",
-			age : 35,
+		Person: Person{
+			first: "James",
+			last:  "Bond",
+			age:   35,
 		},
-		first: "I have License to kill",
-		LicenceToKill:true,
+		first:         "I have License to kill",
+		LicenceToKill: true,
 	}
 
 	//But we can access the Inner value as well outer value
-	fmt.Println("full name ",p1.Person.first + p1.Person.last, " Outer first name ", p1.first)
-
+	fmt.Println("full name ", p1.Person.first+p1.Person.last, " Outer first name ", p1.first)
 
 }

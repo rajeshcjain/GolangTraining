@@ -6,7 +6,6 @@ import "fmt"
 // rest of the function in the sequence and when the main function is about to exit;It will call the
 //defer function but remember it will be rite before the main function is exiting.
 
-
 //The use of it is in when you want to close the file and you can defer it
 
 /*
@@ -37,15 +36,15 @@ if(err != nil){
  }
 */
 
-func hello(){
+func hello() {
 	fmt.Println("hello")
 }
 
-func world(){
+func world() {
 	fmt.Println(" world")
 }
 
-func main(){
+func main() {
 	defer hello()
 	world()
 

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
-	"log"
 	"bufio"
 	"fmt"
+	"log"
+	"net/http"
 )
 
 /*
@@ -13,12 +13,11 @@ words in
 
 */
 
-
-func main(){
+func main() {
 
 	res, err := http.Get("http://www.gutenberg.org/cache/epub/1661/pg1661.txt")
 
-	if err != nil{
+	if err != nil {
 		log.Fatalln(err)
 	}
 
@@ -26,31 +25,29 @@ func main(){
 	scanner.Split(bufio.ScanWords)
 
 	//create a map
-	buckets := make(map[string]int,26)
+	buckets := make(map[string]int, 26)
 
-	for scanner.Scan(){
+	for scanner.Scan() {
 
 		str := scanner.Text()
 		charAtIndexZero := string(str[0])
-		if  _,exists := buckets[charAtIndexZero]; exists {
-                      buckets[charAtIndexZero]++
-	    	}else{
+		if _, exists := buckets[charAtIndexZero]; exists {
+			buckets[charAtIndexZero]++
+		} else {
 			buckets[charAtIndexZero] = 1
 		}
 	}
 
 	/*
-	Remember this
-	range :-
+		Remember this
+		range :-
 
-	when used with map...it returns key,value
-	when used with slice or array...it returns value,index
+		when used with map...it returns key,value
+		when used with slice or array...it returns value,index
 
 	*/
 
-	for k,v := range buckets{
-		fmt.Println( "starts with ",k,"occurances ",v)
+	for k, v := range buckets {
+		fmt.Println("starts with ", k, "occurances ", v)
 	}
 }
-
-

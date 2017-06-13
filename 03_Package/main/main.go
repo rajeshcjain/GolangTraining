@@ -1,10 +1,11 @@
 package main
 
-import ("fmt"
+import (
+	"fmt"
 	"github.com/rajeshcjain/GolangTraining/03_Package/stringutil"
 )
 
-func main(){
+func main() {
 
 	fmt.Println(stringutil.Myname)
 }

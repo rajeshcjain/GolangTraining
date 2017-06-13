@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	myGreeting := map[int]string{
 		0: "Good morning!",
 		1: "Bonjour!",
@@ -12,12 +12,10 @@ func main(){
 
 	fmt.Println(myGreeting)
 	/*
-	So as key does not exists;it does nothing.
+		So as key does not exists;it does nothing.
 	*/
 
-	delete(myGreeting,7)
+	delete(myGreeting, 7)
 	fmt.Println(myGreeting)
-
-
 
 }

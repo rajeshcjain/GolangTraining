@@ -1,27 +1,27 @@
 package main
 
 import (
-	"net/http"
-	"log"
 	"bufio"
 	"fmt"
+	"log"
+	"net/http"
 	"os"
 )
 
-func main(){
+func main() {
 
-	res,err :=http.Get("http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt")
+	res, err := http.Get("http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt")
 
-	if err != nil{
+	if err != nil {
 		log.Fatalln(err)
 	}
 
 	/*
-	This is bufio - that is buffer input output
+		This is bufio - that is buffer input output
 
-	Here we are creating a scanner whose job is to scan the body.
-	After getting the scanner then split the words using the ScanWords
-	function which will split it.
+		Here we are creating a scanner whose job is to scan the body.
+		After getting the scanner then split the words using the ScanWords
+		function which will split it.
 	*/
 	reader := bufio.NewScanner(res.Body)
 	reader.Split(bufio.ScanWords)
@@ -35,18 +35,15 @@ func main(){
 	// After Scan returns false, the Err method will return any error that
 	// occurred during scanning, except that if it was io.EOF, Err
 	// will return nil.
-	for reader.Scan(){
+	for reader.Scan() {
 		myMap[reader.Text()] = ""
 	}
 
 	//This is how the error handling is done here.
-	if err := reader.Err();err != nil{
-		fmt.Fprintln(os.Stderr,"reading input :",err  )
+	if err := reader.Err(); err != nil {
+		fmt.Fprintln(os.Stderr, "reading input :", err)
 	}
 
 	fmt.Println(myMap)
-
-
-
 
 }

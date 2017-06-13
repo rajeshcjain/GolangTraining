@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
-	fmt.Println(greet("rajesh","jain"))
-	var str,_ = greet("sakshi","jain")
+	fmt.Println(greet("rajesh", "jain"))
+	var str, _ = greet("sakshi", "jain")
 	fmt.Println(str)
 
 }
@@ -14,6 +14,6 @@ func main(){
 // that it can return two strings with the (string,string)
 // and in return statement we are returning the two string which are comma seperated.
 
-func greet(fname,lname string) (string,string){
-	return fmt.Sprint(fname,lname),fmt.Sprint(lname,fname)
+func greet(fname, lname string) (string, string) {
+	return fmt.Sprint(fname, lname), fmt.Sprint(lname, fname)
 }

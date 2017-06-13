@@ -2,18 +2,16 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	myGreeting := map[string]string{
 		"Tim":   "Good morning!",
 		"Jenny": "Bonjour!",
-		"J" : "K",
-		"L" : "M",
+		"J":     "K",
+		"L":     "M",
 	}
 
 	fmt.Println(myGreeting)
-	delete(myGreeting,"J")
+	delete(myGreeting, "J")
 	fmt.Println(myGreeting)
-
-
 
 }

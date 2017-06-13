@@ -1,22 +1,22 @@
 package main
 
 import (
-	"net/http"
-	"log"
-	"io/ioutil"
 	"fmt"
+	"io/ioutil"
+	"log"
+	"net/http"
 )
 
-func main(){
+func main() {
 	res, err := http.Get("http://www.geekwiseacademy.com/")
-        if err != nil {
+	if err != nil {
 		log.Fatal(err)
 	}
 
-	page,err := ioutil.ReadAll(res.Body)
+	page, err := ioutil.ReadAll(res.Body)
 	res.Body.Close()
-	if err != nil{
+	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("%s",page)
+	fmt.Println("%s", page)
 }

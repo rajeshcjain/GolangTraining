@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func wrapper() func() int{
+func wrapper() func() int {
 	x := 0
-	return func() int{
+	return func() int {
 		y := 30
 		fmt.Println(y)
 		x++
@@ -12,7 +12,7 @@ func wrapper() func() int{
 	}
 }
 
-func main(){
+func main() {
 	increament := wrapper()
 
 	secFunc := func() func() int {

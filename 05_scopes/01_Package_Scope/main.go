@@ -2,20 +2,19 @@ package main
 
 import "fmt"
 
-
 //Package level scope
 var x int = 42
 
-func main(){
+func main() {
 
 	fmt.Println(x)
-	foo();
+	foo()
 	//block level scope
 	y := 10
 	fmt.Println(y)
 
 }
 
-func foo(){
+func foo() {
 	fmt.Println(x)
 }

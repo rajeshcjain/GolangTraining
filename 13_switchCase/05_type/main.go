@@ -2,19 +2,17 @@ package main
 
 import "fmt"
 
-
 type Contact struct {
 	greeting string
 	name     string
 }
 
-
 //IMPORTANT
 //we are telling to function,we dont know the type of x.So we pass interface.
-func SwitcOnType(x interface{}){
+func SwitcOnType(x interface{}) {
 
 	switch x.(type) {
-	case int :
+	case int:
 		fmt.Println("interger")
 	case string:
 		fmt.Println("string")
@@ -26,12 +24,10 @@ func SwitcOnType(x interface{}){
 
 }
 
-func main(){
+func main() {
 
 	SwitcOnType(7)
 	SwitcOnType("rajesh")
-	SwitcOnType(Contact{"rajesh jain here","rajesh"})
+	SwitcOnType(Contact{"rajesh jain here", "rajesh"})
 
 }
-
-

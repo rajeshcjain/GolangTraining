@@ -1,11 +1,11 @@
 package main
 
-import(
+import (
 	"fmt"
 	"github.com/rajeshcjain/GolangTraining/05_scopes/04_visibility/vis"
 )
 
-func main(){
+func main() {
 	fmt.Println(vis.MyName)
 	vis.PrintName()
 }

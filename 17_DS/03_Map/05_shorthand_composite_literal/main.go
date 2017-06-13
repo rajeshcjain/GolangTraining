@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	/*here we are creating the map and it creates the underlying structure
 	and then you can perform the operations straight away on the maps*/

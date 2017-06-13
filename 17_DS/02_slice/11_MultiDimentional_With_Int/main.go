@@ -16,14 +16,14 @@ import "fmt"
 
 */
 
-func main(){
-	transactions := make([][]int,3)
-	for i := 0; i < 3; i++{
-		transaction := make([]int,4)
-		for j := 0;j < 4; j++{
-			transaction = append(transaction,(j*i))
+func main() {
+	transactions := make([][]int, 3)
+	for i := 0; i < 3; i++ {
+		transaction := make([]int, 4)
+		for j := 0; j < 4; j++ {
+			transaction = append(transaction, (j * i))
 		}
-		transactions = append(transactions,transaction)
+		transactions = append(transactions, transaction)
 	}
 	fmt.Println(transactions)
 }

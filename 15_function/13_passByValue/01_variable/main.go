@@ -2,7 +2,7 @@ package _1_variable
 
 import "fmt"
 
-func main(){
+func main() {
 
 	x := 42
 	fmt.Println(&x)
@@ -13,10 +13,9 @@ func main(){
 	fmt.Println(&x)
 	fmt.Println(x)
 
-
 }
 
-func changeMe(z *int){
+func changeMe(z *int) {
 	fmt.Println("Start of chnageMe function")
 	fmt.Println(z)
 	fmt.Println(*z)

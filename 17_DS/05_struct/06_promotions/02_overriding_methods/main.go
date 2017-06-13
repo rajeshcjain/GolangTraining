@@ -6,7 +6,7 @@ import (
 
 type person struct {
 	name string
-	age int
+	age  int
 }
 
 type DoubleZero struct {
@@ -14,25 +14,25 @@ type DoubleZero struct {
 	LicenseToKill bool
 }
 
-func (p person) greetings(){
-	fmt.Println(p.name, " : ",p.age)
+func (p person) greetings() {
+	fmt.Println(p.name, " : ", p.age)
 }
 
-func (d DoubleZero) greetings(){
-	fmt.Println(d.person.name," : ",d.person.age, " : ", d.LicenseToKill)
+func (d DoubleZero) greetings() {
+	fmt.Println(d.person.name, " : ", d.person.age, " : ", d.LicenseToKill)
 }
 
-func main(){
+func main() {
 
 	p2 := person{
-		name : "R1",
-		age : 32,
+		name: "R1",
+		age:  32,
 	}
 
 	p1 := DoubleZero{
-		person : person{
-			name : "James Bond",
-			age : 35,
+		person: person{
+			name: "James Bond",
+			age:  35,
 		},
 		LicenseToKill: true,
 	}

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	m := make(map[string]int)
 	m["rajesh"] = 44
 	fmt.Println(m)
@@ -13,6 +13,6 @@ func main(){
 
 }
 
-func changeMe(z map[string]int){
+func changeMe(z map[string]int) {
 	z["rajesh"] = 22
 }

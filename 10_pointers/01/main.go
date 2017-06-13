@@ -2,19 +2,19 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	a := 24
 
-	fmt.Println("The value of a ",a)
-	fmt.Println("The address of a ",&a)
+	fmt.Println("The value of a ", a)
+	fmt.Println("The address of a ", &a)
 
 	var p *int = &a
 	fmt.Println("The value of p ", p)
 	fmt.Println("The dererence of p ", *p)
 
 	*p = 42 // p says, that change the value at the memory address, which is stored in p
-	fmt.Println("The value of a ",a)
+	fmt.Println("The value of a ", a)
 
 }
 

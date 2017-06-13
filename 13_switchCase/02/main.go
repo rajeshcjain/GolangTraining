@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
-	switch "rajesh"{
-	case "sakshi" :
+	switch "rajesh" {
+	case "sakshi":
 		fmt.Println("sakshi")
 
-	case "rajesh" :
+	case "rajesh":
 		fmt.Println("rajesh")
 		fallthrough
 	case "atishay":

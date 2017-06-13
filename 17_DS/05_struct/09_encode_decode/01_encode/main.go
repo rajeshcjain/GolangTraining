@@ -5,10 +5,10 @@ import (
 	"os"
 )
 
-type Person struct{
+type Person struct {
 	First string
-	Last string
-	Age int
+	Last  string
+	Age   int
 }
 
 /*
@@ -16,9 +16,9 @@ encode means we are changing the encode it means change in to which humans can n
 then send it over stream...For it we need writer to write.
 */
 
-func main(){
+func main() {
 
-	p1 := Person{"James","Bond",32}
+	p1 := Person{"James", "Bond", 32}
 
 	json.NewEncoder(os.Stdout).Encode(p1)
 }

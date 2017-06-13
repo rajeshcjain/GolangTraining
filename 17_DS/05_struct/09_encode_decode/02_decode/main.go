@@ -2,17 +2,17 @@ package main
 
 import (
 	"encoding/json"
-	"strings"
 	"fmt"
+	"strings"
 )
 
-type Person struct{
+type Person struct {
 	First string
-	Last string
-	Age int
+	Last  string
+	Age   int
 }
 
-func main(){
+func main() {
 
 	bs := []byte(`{"First":"James","Last":"Bond","Age":23}`)
 
@@ -23,11 +23,10 @@ func main(){
 	var p1 Person
 	err := json.NewDecoder(reader).Decode(&p1)
 
-	if err != nil{
+	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println(p1)
-
 
 }

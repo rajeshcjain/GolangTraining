@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	//First Way
 
 	sum := 0
-	for i := 0;i < 20;i++{
+	for i := 0; i < 20; i++ {
 		sum += i
 	}
 	fmt.Println(sum)
@@ -15,13 +15,13 @@ func main(){
 	//Second Way
 
 	sum1 := 0
-	for ;sum1 < 1000; sum1 +=20{
+	for ; sum1 < 1000; sum1 += 20 {
 
 	}
 
 	fmt.Println(sum1)
 
-        // Third way
+	// Third way
 
 	sum2 := 0
 	for sum1 < 10000 {

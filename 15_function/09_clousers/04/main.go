@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func wrapper()  func() int {
+func wrapper() func() int {
 	var x int
 	return func() int {
 		x++
@@ -10,9 +10,9 @@ func wrapper()  func() int {
 	}
 }
 
-func main(){
+func main() {
 	increment := wrapper()
-	fmt.Printf("%T \n",increment)
+	fmt.Printf("%T \n", increment)
 	fmt.Println(increment())
 	fmt.Println(increment())
 }
