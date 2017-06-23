@@ -21,13 +21,14 @@ func main(){
 
 func increment(str string){
 	for i:=0;i<20;i++{
-		mutex.Lock()
 		time.Sleep(time.Duration(5*time.Millisecond))
+		mutex.Lock()
 		x := count
 		x++
 		count = x
-		mutex.Unlock()
 		fmt.Println(str," count:",count," x:",x)
+		mutex.Unlock()
+
 	}
 	wg.Done()
 }
