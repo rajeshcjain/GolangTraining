@@ -16,7 +16,7 @@ func main() {
 
 	bs := []byte(`{"First":"James","Last":"Bond","Age":23}`)
 
-	//This is a simulation of json coming from somewhere as a stream..So we need to crearte
+	//This is a simulation of json coming from somewhere as a stream..So we need to create
 	//the reader.
 	reader := strings.NewReader(string(bs))
 

@@ -7,10 +7,15 @@ import (
 func main() {
 
 	//Here we are passing the slice which is nothing but a list.
-	//when we pass slice to function we dont need to type cast it
+	//when we pass slice to function we don't need to type cast it
 	//as these are constants and when we pass it to function
 	//which accepts the variadic of int it will convert it in to
 	//type int.
+	//In Go, when have constants then those constants does not have any type..
+	//we call that these constants are of a kind i.e they are of there own kind
+	//which are not assigned any type..so they can be assigned any type..in this case
+	//these does not have any type and hence can be assigned a type(in this case int) when passed to a function
+	//This way we need not to type cast it.
 	fmt.Println(greet(1, 2, 3, 4, 5, 6, 7))
 }
 

@@ -8,6 +8,10 @@ import (
 func main(){
 
 	var wg sync.WaitGroup
+	//So here is the solution of the race condition which happen in the last program.
+	//we mentioned the wg.add(2)...which is a common space and in the main thread.
+	//but we still can call wg.done() in the different go routines.
+	// which is acceptable.
 	wg.Add(2)
 
 	c := make(chan int)
@@ -29,6 +33,7 @@ func main(){
 	}()
 
 	go func(){
+		fmt.Println("This is the place we have declared the wait of waiting group.")
 		wg.Wait()
 		close(c)
 	}()

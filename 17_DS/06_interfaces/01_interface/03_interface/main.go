@@ -29,7 +29,9 @@ That's a funny way of saying what interfaces do - and it's also true.
 
 So the interface says which METHODS a VALUE must have to IMPLICITLY IMPLEMENT the interface
 
-With the TYPES "Vehicle" and "Cloth", they are each saying that a VALUE with a method "Color()" will implement each of those interfaces.
+With the TYPES "Vehicle" and "Cloth", they are each saying that a VALUE with a method "Color()"
+
+will implement each of those interfaces.
 
 So you have a value of type "Car" assigned to the variable c
 
@@ -63,7 +65,6 @@ type Car struct {
 }
 
 func (c Car) color() string {
-
 	return "black"
 }
 
